@@ -1,0 +1,6 @@
+<h1>App Component - Parent Component</h1> 
+
+<input type="text" #username (keyup)="getusername(username.value)">
+{{message}}
+ <app-home [temp]="usr" (message)="getMessage($event)"></app-home>
+
