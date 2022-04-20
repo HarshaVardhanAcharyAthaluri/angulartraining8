@@ -1,0 +1,16 @@
+<h1>App Component </h1> 
+<table *ngIf="temp">
+    <tr>
+        <th> Id </th>
+        <th>Name</th>
+        <th>Email</th>
+    </tr>
+    <tr *ngFor="let usr of temp">
+        <td>{{usr.id}}</td>
+        <td>{{usr.name}}</td>
+        <td>{{usr.email}}</td>
+    </tr>
+
+</table>
+<input type="text" #ipvalue (keyup)="0">
+<app-home [temp]="ipvalue.value"></app-home>
