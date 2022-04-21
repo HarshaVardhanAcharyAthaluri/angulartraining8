@@ -1,0 +1,8 @@
+<h1>App Component </h1> 
+
+<form #myfrom="ngForm" (submit)="submitdata(myfrom.value)">
+    Username<input type="text" name="username" ngModel required>
+    Contact<input type="text" name="contact" ngModel>
+    Email<input type="text" name="email" ngModel>
+    <input type="submit">
+</form>
